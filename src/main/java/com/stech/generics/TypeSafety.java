@@ -28,8 +28,19 @@ public class TypeSafety {
         employeeList.add("Sandeep");
 
         for(int i=0; i<employeeList.size();i++) {
-            if(employeeList.get(i) instanceof Employee)
+            if(employeeList.get(i) instanceof Employee) //Comment this to get ClassCastException
                 System.out.println(((Employee) employeeList.get(i)).getId());
+        }
+
+        //Using Generics
+        ArrayList<Employee> employeeListGenerics = new ArrayList();
+        employeeListGenerics.add(new Employee(1, "Sandeep", "IT"));
+        employeeListGenerics.add(new Employee(2, "Ravi", "CE"));
+        employeeListGenerics.add(new Employee(3, "Alan", "IT"));
+        //employeeListGenerics.add("Sandeep"); //Uncomment this to get compilation error
+
+        for(int i=0; i<employeeListGenerics.size();i++) {
+            System.out.println(employeeListGenerics.get(i).getId());
         }
     }
 }
