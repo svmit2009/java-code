@@ -24,6 +24,12 @@ public class WildCardExample {
         printValue(intList);
         System.out.println("Printing double list : ");
         printValue(doubleList);
+
+        //ArrayList<?> list1 = new ArrayList<?>();
+        ArrayList<?> list2 = new ArrayList<Object>();
+        ArrayList<? extends Object> list3 = new ArrayList<String>();
+        ArrayList<? super String> list4 = new ArrayList<Object>();
+        //ArrayList<? super String> list5 = new ArrayList<Integer>();
     }
 
     //Uncomment below line to see errors and then create separate methods for ArrayList<Integer> and ArrayList<Double>
