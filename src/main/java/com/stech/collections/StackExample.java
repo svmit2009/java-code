@@ -47,6 +47,7 @@ public class StackExample {
         printStackDetails(intStack);
 
         System.out.println("Position of element 78 : " + intStack.search(78));
+        System.out.println("Position of element 150 : " + intStack.search(150));
     }
 
     private static void printStackDetails(Stack stack) {
