@@ -1,6 +1,7 @@
 package com.stech.collections;
 
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.LinkedList;
 import java.util.Vector;
 
@@ -60,8 +61,9 @@ public class VectorExample {
         System.out.println("Size of the vector : " + vector.size());
         System.out.println("Capacity of the vector : " + vector.capacity());
 
-        for (int i = 0; i < vector.size(); i++) {
-            System.out.println(i + " : " + vector.get(i));
+        Enumeration vEnum = vector.elements();
+        while(vEnum.hasMoreElements()) {
+            System.out.println(vEnum.nextElement() );
         }
     }
 }
