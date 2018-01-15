@@ -64,8 +64,8 @@ public class LinkedHashSetExample {
         System.out.println("Contents of the hashset : " + linkedHashSet);
         Iterator iterator = linkedHashSet.iterator();
 
-//        while(iterator.hasNext()) {
-//            System.out.println(iterator.next());
-//        }
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
