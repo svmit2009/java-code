@@ -14,6 +14,8 @@ public class ThreadPriorityExample {
         Thread thread = new Thread(myThreadImplementingRunnableInterface);
         thread.setPriority(10);
 
+        //thread.setPriority(100); //uncomment this to get illegalargument exception
+
         thread.start();
         myThreadExtendingThreadClass.start();
 
