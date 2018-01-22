@@ -1,5 +1,7 @@
 package com.stech.example;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * Created by sandeeplulla on 17/1/18.
  */
@@ -14,7 +16,7 @@ public class DetailsPrinter implements Runnable {
 
     public void run() {
         //toggle comments between below 2 statements to understand the difference between synchronized & non-synchronized
-        //printer.nonSynchronizedPrinter(printerName);
-        printer.synchronizedPrinter(printerName);
+        printer.nonSynchronizedPrinter(printerName);
+        //printer.synchronizedPrinter(printerName);
     }
 }
