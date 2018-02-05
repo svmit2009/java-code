@@ -11,7 +11,7 @@ public class MyThreadExample {
         myThreadExtendingThreadClass.start();
 //        myThreadExtendingThreadClass.start(); //uncomment this to see IllegalThreadStateException
 
-        MyThreadImplementingRunnableInterface myThreadImplementingRunnableInterface = new MyThreadImplementingRunnableInterface();
+        MyThreadImplementingRunnableInterface myThreadImplementingRunnableInterface = new MyThreadImplementingRunnableInterface("");
         Thread thread = new Thread(myThreadImplementingRunnableInterface);
         thread.start();
 

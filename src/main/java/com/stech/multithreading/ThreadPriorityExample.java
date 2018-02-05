@@ -10,7 +10,7 @@ public class ThreadPriorityExample {
         MyThreadExtendingThreadClass myThreadExtendingThreadClass = new MyThreadExtendingThreadClass();
         myThreadExtendingThreadClass.setPriority(2);
 
-        MyThreadImplementingRunnableInterface myThreadImplementingRunnableInterface = new MyThreadImplementingRunnableInterface();
+        MyThreadImplementingRunnableInterface myThreadImplementingRunnableInterface = new MyThreadImplementingRunnableInterface("");
         Thread thread = new Thread(myThreadImplementingRunnableInterface);
         thread.setPriority(10);
 
