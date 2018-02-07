@@ -20,5 +20,9 @@ public class ClassExample {
         System.out.println(c2.getDeclaredClasses());
         System.out.println(c2.getDeclaredConstructors());
         System.out.println(c2.getDeclaredMethods());
+
+        System.out.println(Employee.class.getClassLoader());
+        System.out.println(String.class.getClassLoader());
+        System.out.println(Object.class.getClassLoader());
     }
 }
